@@ -9,6 +9,7 @@
       integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n"
       crossorigin="anonymous"
     />
+    <script src="./script/script.js"></script>
     <title>Someone Here CV</title>
   </head>
 
@@ -24,48 +25,63 @@
       </div>
       <p>Some very very very very very very important details about our user are presented here. This is really really important!</p>
       </div>
-      <div class="contact">
-        <h2 class="heading-block">CONTACT</h2>
-        <address>
-        <div class="contact-item">
-          <i class="bi bi-envelope"></i>
-          <a class="contact-item-list" href="mailto:someone@example.com" target="_blank">someone@example.com</a>
-        </div>
 
-         <div class="contact-item">
-           <i class="bi bi-telephone"></i>
-           <a class="contact-item-list" href="+40744191321" target="_blank">+40744191321</a>
-         </div>
-        </address>
-      </div>
+    <details >
+      <summary>PERSONAL DETAILS AND SKILLS</summary>
+      <div class="details-block">
+        <div class="contact">
+          <h2 class="heading-block">CONTACT</h2>
+          <address>
+            <div class="contact-item">
+              <i class="bi bi-envelope"></i>
+              <a class="contact-item-list" href="mailto:someone@example.com" target="_blank">someone@example.com</a>
+            </div>
+
+            <div class="contact-item">
+              <i class="bi bi-telephone"></i>
+              <a class="contact-item-list" href="+40744191321" target="_blank">+40744191321</a>
+            </div>
+          </address>
+        </div>
 
         <div class="contact">
           <h2 class="heading-block">SOCIAL MEDIA</h2>
-            <div class="contact-item">
-              <i class="bi bi-linkedin"></i>
-              <a class="contact-item-list" href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-            </div>
+          <div class="contact-item">
+            <i class="bi bi-linkedin"></i>
+            <a class="contact-item-list" href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+          </div>
         </div>
 
-          <div class="skills">
-            <h2 class="heading-block">SKILLS</h2>
-            <ol class="ordered-list">
-              <li class="ordered-list-item">HTML</li>
-              <li class="ordered-list-item">CSS</li>
-              <li class="ordered-list-item">JavScript</li>
-            </ol>
-          </div>
+        <div class="skills">
+          <h2 class="heading-block">SKILLS</h2>
+          <ol class="ordered-list">
+            <li class="ordered-list-item">HTML</li>
+            <li class="ordered-list-item">CSS</li>
+            <li class="ordered-list-item">JavScript</li>
+          </ol>
+        </div>
 
-          <div class="preffrered-type-work">
-            <h2 class="heading-block">PREFFERED TYPE WORK</h2>
-             <ul class="unordered-list">
-               <li class="unordered-list-item">HTML</li>
-               <li class="unordered-list-item">CSS</li>
-               <li class="unordered-list-item">JavScript</li>
-             </ul>
+        <div class="preffrered-type-work">
+          <h2 class="heading-block">PREFFERED TYPE WORK</h2>
+          <ul class="unordered-list">
+            <li class="unordered-list-item">HTML</li>
+            <li class="unordered-list-item">CSS</li>
+            <li class="unordered-list-item">JavScript</li>
+          </ul>
+        </div>
           </div>
+    </details>
 
-          <hr width="100%" color="#f0f0f0"/>
-    </div>
+    <object data="experience/experience.html" type=""></object>
+    <button id="openDialogBtn">CONTACT ME</button>
+
+    <dialog id="dialog">
+      <div class="contact-wrapper">
+        <object data="contact/contact.html" type="" height="420px" />
+        <button id="closeDialogBtn">CLOSE</button>
+      </div>
+    </dialog>
+
+  </div>
   </body>
 </html>
